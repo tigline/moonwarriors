@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Cocos2d-html5 Show Case - MoonWarriors</title>
+    <meta name="viewport" content="user-scalable=no"/>
+    <meta charset="UTF-8"/>
+    <meta name="author" content="html5china"/>
+</head>
+<script type="text/javascript" language=JavaScript charset="UTF-8">
+    document.onkeydown=function(event){
+        var e = event || window.event || arguments.callee.caller.arguments[0];
+        if(e && e.keyCode==27){ // 按 Esc
+            var a=confirm("是否退出游戏");
+            if(a){
+                window.history.back(-1);
+            }
+        }
+        if(e && e.keyCode==113){ // 按 F2
+
+        }
+        if(e && e.keyCode==13){ // enter 键
+
+        }
+    };
+    
+</script>
+<script>
+	function mainweb(){
+				alert("bye");
+        location="http://localhost:1595/lesson-html-01/object.html";
+    }
+</script>
+	
+<body style="text-align: center;background: #f2f6f8;">
+<h1 style="background-image: ;margin-bottom: 30px;font-family:verdana ;color: darkgray;font-size: 30px">Moon Warriors</h1>
+<div></div>
+<div style="display:inline-block;width:auto; margin: 0 auto; background: black; position:relative; border:5px solid black; border-radius: 10px; box-shadow: 0 5px 50px #333">
+    <!--<canvas id="gameCanvas" width="1200" height="675"></canvas>-->
+    <!--<canvas id="gameCanvas" width="480" height="270"></canvas>-->
+    <canvas id="gameCanvas" width="550" height="750"></canvas>
+</div>
+<script src="MoonWarriors-html5.js"></script>
+</body>
+</html>
